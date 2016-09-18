@@ -322,7 +322,7 @@ Private Sub TestExit_Click()
 End Sub
 
 Private Sub InputText_KeyUp(KeyCode As Integer, Shift As Integer)
-    If KeyCode = vbKeyReturn Then
+    If KeyCode = vbKeyReturn And Len(InputText.Text) > 0 Then
         If RandomLabel.Caption = InputText.Text Then
             rightcount = rightcount + 1
         Else

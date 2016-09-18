@@ -373,7 +373,7 @@ Private Sub TestExit_Click()
 End Sub
 
 Private Sub InputText_KeyUp(KeyCode As Integer, Shift As Integer)
-    If KeyCode = vbKeyReturn Then
+    If KeyCode = vbKeyReturn And Len(InputText.Text) > 0 Then
         If number <= 50 Then
             rightsum = Functions.sum(rightsum, Trim(RandomLabel.Caption))
             inputsum = Functions.sum(inputsum, Trim(InputText.Text))
