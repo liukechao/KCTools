@@ -1,0 +1,5 @@
+git config --global user.email "liu_kechao@163.com"
+git config --global user.name "Kechao Liu"
+git add
+git commit -m "Message"
+git push 
